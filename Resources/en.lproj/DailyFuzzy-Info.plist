@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Overridable Blacklist Prefixes</key>
+	<array>
+		<string>kid</string>
+		<string>parent</string>
+		<string>prom </string>
+		<string>father</string>
+		<string>dad</string>
+		<string>mom</string>
+		<string>son</string>
+		<string>daughter</string>
+		<string>niece</string>
+		<string>nephew</string>
+		<string>toddler</string>
+		<string>child</string>
+		<string>boy</string>
+		<string>girl</string>
+		<string>premature</string>
+		<string>autis</string>
+		<string>aspergers</string>
+		<string>wedding</string>
+		<string>ring bearer</string>
+        <string>man </string>
+		<string>grandmother</string>
+		<string>grandfather</string>
+		<string>grandma</string>
+		<string>grandpa</string>
+		<string>husband</string>
+        <string>wife</string>
+        <string>letter</string>
+		<string>message</string>
+		<string>brother</string>
+		<string>sister</string>
+		<string>cousin</string>
+    </array>
+    <key>Non-Overridable Blacklist Prefixes</key>
+    <array>
+        <string>one eye</string>
+        <string>missing eye</string>
+        <string>missing an eye</string>
+        <string>lost an eye</string>
+        <string>lost a leg</string>
+        <string>lost his leg</string>
+        <string>lost her leg</string>
+        <string>missing a leg</string>
+        <string>missing leg</string>
+        <string>3 legs</string>
+        <string>three legs</string>
+        <string>disabled</string>
+        <string>cancer</string>
+        <string>blind</string>
+        <string>bald</string>
+        <string>hairless</string>
+    </array>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Daily Fuzzy</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIcons~ipad</key>
+	<dict/>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.5.1</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb549629048469802</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>51</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>d7107b75f7df4f08b0d47b741ee07f1e58923526</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+		</array>
+	</dict>
+	<key>FacebookAppID</key>
+	<string>549629048469802</string>
+	<key>FacebookDisplayName</key>
+	<string>Daily Fuzzy</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbauth2</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2014 Regaip Sen.  All rights reserved.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>For saving fuzzies to your photo album</string>
+	<key>UIMainStoryboardFile</key>
+	<string>MainStoryboard_iPhone</string>
+	<key>UIMainStoryboardFile~ipad</key>
+	<string>MainStoryboard_iPad</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UIStatusBarTintParameters</key>
+	<dict>
+		<key>UINavigationBar</key>
+		<dict>
+			<key>Style</key>
+			<string>UIBarStyleDefault</string>
+			<key>Translucent</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+	</array>
+	<key>Whitelist Prefixes</key>
+	<array>
+		<string>pet</string>
+		<string>pup</string>
+		<string>dog</string>
+		<string>cat</string>
+        <string>kitt</string>
+        <string>rabbit</string>
+        <string>bunny</string>
+        <string>hamster</string>
+        <string>good boy</string>
+        <string>good girl</string>
+	</array>
+</dict>
+</plist>

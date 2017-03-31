@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A92E14CCA35637127174705 /* Pods_DailyFuzzy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE33A48C4441C41C0B7A3ECD /* Pods_DailyFuzzy.framework */; };
+		E418F7AE1DB6C67200690612 /* splash-center@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E418F7AD1DB6C67200690612 /* splash-center@2x.png */; };
+		E418F7B21DB6C7E400690612 /* splash-header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E418F7AF1DB6C7E400690612 /* splash-header@2x.png */; };
+		E418F7B31DB6C7E400690612 /* splash-footer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E418F7B01DB6C7E400690612 /* splash-footer@2x.png */; };
+		E418F7B41DB6C7E400690612 /* splash-title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E418F7B11DB6C7E400690612 /* splash-title@2x.png */; };
+		E470C44518BCF9A60064508E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E470C44418BCF9A60064508E /* Images.xcassets */; };
+		E470C44618BD34740064508E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F0FEAA1745859100CD3650 /* UIKit.framework */; };
+		E470C44718BD348C0064508E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F0FEAE1745859100CD3650 /* CoreGraphics.framework */; };
+		E471DB521E8EF4F5001B0FA7 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E471DB511E8EF4F5001B0FA7 /* Utils.m */; };
+		E471DB551E8EF880001B0FA7 /* AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E471DB541E8EF880001B0FA7 /* AlertManager.m */; };
+		E491A69718C8FEC700FC8D90 /* PSTCenteredScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E491A69518C8FEC700FC8D90 /* PSTCenteredScrollView.m */; };
+		E491A69B18C9426900FC8D90 /* background-light-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E491A69A18C9426900FC8D90 /* background-light-small@2x.png */; };
+		E491A69D18C94E1600FC8D90 /* missing-image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E491A69C18C94E1600FC8D90 /* missing-image@2x.png */; };
+		E491A6B418CD1FDB00FC8D90 /* AppiraterLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E491A6B218CD1FDB00FC8D90 /* AppiraterLocalizable.strings */; };
+		E49D33A118CF975A005A7883 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E491A6B518CD200600FC8D90 /* SystemConfiguration.framework */; };
+		E49DAFEF1DB49A3200355A02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E49DAFEE1DB49A3200355A02 /* AVFoundation.framework */; };
+		E49DAFF11DB49A8300355A02 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E49DAFF01DB49A8300355A02 /* AVKit.framework */; };
+		E49DAFF41DB59B2600355A02 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E49DAFF31DB59B2600355A02 /* CoreMedia.framework */; };
+		E4A5BB2D18B3DC9E007AD8E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4A5BB2618B3DC9E007AD8E6 /* InfoPlist.strings */; };
+		E4A5BB2E18B3DC9E007AD8E6 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4A5BB2818B3DC9E007AD8E6 /* MainStoryboard_iPad.storyboard */; };
+		E4A5BB2F18B3DC9E007AD8E6 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4A5BB2A18B3DC9E007AD8E6 /* MainStoryboard_iPhone.storyboard */; };
+		E4A5BB5518B3DCB0007AD8E6 /* leftArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4A5BB3F18B3DCB0007AD8E6 /* leftArrow@2x.png */; };
+		E4A5BB5718B3DCB0007AD8E6 /* rightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4A5BB4118B3DCB0007AD8E6 /* rightArrow@2x.png */; };
+		E4A5BB5B18B3DCB0007AD8E6 /* tab-item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4A5BB4518B3DCB0007AD8E6 /* tab-item@2x.png */; };
+		E4A5BB6218B3DCBE007AD8E6 /* PictureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A5BB5D18B3DCBE007AD8E6 /* PictureManager.m */; };
+		E4A5BB6318B3DCBE007AD8E6 /* ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A5BB5F18B3DCBE007AD8E6 /* ViewUtils.m */; };
+		E4A5BB6418B3DCBE007AD8E6 /* RedditFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A5BB6118B3DCBE007AD8E6 /* RedditFetcher.m */; };
+		E4A5BB7318B3DCC9007AD8E6 /* FuzzyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A5BB6718B3DCC9007AD8E6 /* FuzzyAppDelegate.m */; };
+		E4A5BB7518B3DCC9007AD8E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A5BB6918B3DCC9007AD8E6 /* main.m */; };
+		E4A5BB7718B3DCC9007AD8E6 /* MKNumberBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A5BB6D18B3DCC9007AD8E6 /* MKNumberBadgeView.m */; };
+		E4A5BB8318B3DCD4007AD8E6 /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A5BB7A18B3DCD4007AD8E6 /* FavoritesViewController.m */; };
+		E4A5BB8418B3DCD4007AD8E6 /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A5BB7C18B3DCD4007AD8E6 /* PictureViewController.m */; };
+		E4A5BB8518B3DCD4007AD8E6 /* RecentFuzziesController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A5BB7E18B3DCD4007AD8E6 /* RecentFuzziesController.m */; };
+		E4A5BB8618B3DCD4007AD8E6 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A5BB8018B3DCD4007AD8E6 /* SettingsViewController.m */; };
+		E4A5BB8718B3DCD4007AD8E6 /* SplashScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A5BB8218B3DCD4007AD8E6 /* SplashScreenController.m */; };
+		E4B4514D1922791D0058E250 /* thumb-placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4B4514C1922791D0058E250 /* thumb-placeholder@2x.png */; };
+		E4D659481912E8C100A4B4C9 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D659471912E8C100A4B4C9 /* ImageIO.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		154964F946A4956A32B413A6 /* Pods-DailyFuzzy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyFuzzy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DailyFuzzy/Pods-DailyFuzzy.debug.xcconfig"; sourceTree = "<group>"; };
+		DDD3780B23CB7B5D6D439EF0 /* Pods-DailyFuzzy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyFuzzy.release.xcconfig"; path = "Pods/Target Support Files/Pods-DailyFuzzy/Pods-DailyFuzzy.release.xcconfig"; sourceTree = "<group>"; };
+		DE33A48C4441C41C0B7A3ECD /* Pods_DailyFuzzy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyFuzzy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E418F7AD1DB6C67200690612 /* splash-center@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splash-center@2x.png"; path = "Resources/Images/splash-center@2x.png"; sourceTree = "<group>"; };
+		E418F7AF1DB6C7E400690612 /* splash-header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splash-header@2x.png"; path = "Resources/Images/splash-header@2x.png"; sourceTree = "<group>"; };
+		E418F7B01DB6C7E400690612 /* splash-footer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splash-footer@2x.png"; path = "Resources/Images/splash-footer@2x.png"; sourceTree = "<group>"; };
+		E418F7B11DB6C7E400690612 /* splash-title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splash-title@2x.png"; path = "Resources/Images/splash-title@2x.png"; sourceTree = "<group>"; };
+		E44ACF2418A15CB600408320 /* DailyFuzzy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DailyFuzzy.entitlements; sourceTree = "<group>"; };
+		E470C44418BCF9A60064508E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = DailyFuzzy/Images.xcassets; sourceTree = "<group>"; };
+		E471DB501E8EF4F5001B0FA7 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = Classes/Models/Utils.h; sourceTree = SOURCE_ROOT; };
+		E471DB511E8EF4F5001B0FA7 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utils.m; path = Classes/Models/Utils.m; sourceTree = SOURCE_ROOT; };
+		E471DB531E8EF880001B0FA7 /* AlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlertManager.h; path = Classes/Models/AlertManager.h; sourceTree = SOURCE_ROOT; };
+		E471DB541E8EF880001B0FA7 /* AlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlertManager.m; path = Classes/Models/AlertManager.m; sourceTree = SOURCE_ROOT; };
+		E491A69518C8FEC700FC8D90 /* PSTCenteredScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSTCenteredScrollView.m; path = Classes/Delegates/PSTCenteredScrollView.m; sourceTree = SOURCE_ROOT; };
+		E491A69618C8FEC700FC8D90 /* PSTCenteredScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSTCenteredScrollView.h; path = Classes/Delegates/PSTCenteredScrollView.h; sourceTree = SOURCE_ROOT; };
+		E491A69A18C9426900FC8D90 /* background-light-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background-light-small@2x.png"; path = "Resources/Images/background-light-small@2x.png"; sourceTree = "<group>"; };
+		E491A69C18C94E1600FC8D90 /* missing-image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "missing-image@2x.png"; path = "Resources/Images/missing-image@2x.png"; sourceTree = "<group>"; };
+		E491A6A118CB8FE600FC8D90 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E491A6B318CD1FDB00FC8D90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = AppiraterLocalizable.strings; sourceTree = "<group>"; };
+		E491A6B518CD200600FC8D90 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E49DAFEE1DB49A3200355A02 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E49DAFF01DB49A8300355A02 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		E49DAFF31DB59B2600355A02 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		E4A5BB2518B3DC9E007AD8E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = "Resources/en.lproj/DailyFuzzy-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E4A5BB2718B3DC9E007AD8E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		E4A5BB2918B3DC9E007AD8E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = Resources/en.lproj/MainStoryboard_iPad.storyboard; sourceTree = SOURCE_ROOT; };
+		E4A5BB2B18B3DC9E007AD8E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = Resources/en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = SOURCE_ROOT; };
+		E4A5BB3F18B3DCB0007AD8E6 /* leftArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "leftArrow@2x.png"; path = "Resources/Images/leftArrow@2x.png"; sourceTree = "<group>"; };
+		E4A5BB4118B3DCB0007AD8E6 /* rightArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rightArrow@2x.png"; path = "Resources/Images/rightArrow@2x.png"; sourceTree = "<group>"; };
+		E4A5BB4518B3DCB0007AD8E6 /* tab-item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab-item@2x.png"; path = "Resources/Images/tab-item@2x.png"; sourceTree = "<group>"; };
+		E4A5BB5C18B3DCBE007AD8E6 /* PictureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PictureManager.h; path = Classes/Models/PictureManager.h; sourceTree = SOURCE_ROOT; };
+		E4A5BB5D18B3DCBE007AD8E6 /* PictureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PictureManager.m; path = Classes/Models/PictureManager.m; sourceTree = SOURCE_ROOT; };
+		E4A5BB5E18B3DCBE007AD8E6 /* ViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewUtils.h; path = Classes/Models/ViewUtils.h; sourceTree = SOURCE_ROOT; };
+		E4A5BB5F18B3DCBE007AD8E6 /* ViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewUtils.m; path = Classes/Models/ViewUtils.m; sourceTree = SOURCE_ROOT; };
+		E4A5BB6018B3DCBE007AD8E6 /* RedditFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RedditFetcher.h; path = Classes/Models/RedditFetcher.h; sourceTree = SOURCE_ROOT; };
+		E4A5BB6118B3DCBE007AD8E6 /* RedditFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RedditFetcher.m; path = Classes/Models/RedditFetcher.m; sourceTree = SOURCE_ROOT; };
+		E4A5BB6518B3DCC9007AD8E6 /* DailyFuzzy-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DailyFuzzy-Prefix.pch"; path = "Classes/Delegates/DailyFuzzy-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		E4A5BB6618B3DCC9007AD8E6 /* FuzzyAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FuzzyAppDelegate.h; path = Classes/Delegates/FuzzyAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		E4A5BB6718B3DCC9007AD8E6 /* FuzzyAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FuzzyAppDelegate.m; path = Classes/Delegates/FuzzyAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		E4A5BB6918B3DCC9007AD8E6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Classes/Delegates/main.m; sourceTree = SOURCE_ROOT; };
+		E4A5BB6C18B3DCC9007AD8E6 /* MKNumberBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKNumberBadgeView.h; path = Classes/Delegates/MKNumberBadgeView.h; sourceTree = SOURCE_ROOT; };
+		E4A5BB6D18B3DCC9007AD8E6 /* MKNumberBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKNumberBadgeView.m; path = Classes/Delegates/MKNumberBadgeView.m; sourceTree = SOURCE_ROOT; };
+		E4A5BB7918B3DCD4007AD8E6 /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavoritesViewController.h; path = Classes/Controllers/FavoritesViewController.h; sourceTree = SOURCE_ROOT; };
+		E4A5BB7A18B3DCD4007AD8E6 /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavoritesViewController.m; path = Classes/Controllers/FavoritesViewController.m; sourceTree = SOURCE_ROOT; };
+		E4A5BB7B18B3DCD4007AD8E6 /* PictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PictureViewController.h; path = Classes/Controllers/PictureViewController.h; sourceTree = SOURCE_ROOT; };
+		E4A5BB7C18B3DCD4007AD8E6 /* PictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PictureViewController.m; path = Classes/Controllers/PictureViewController.m; sourceTree = SOURCE_ROOT; };
+		E4A5BB7D18B3DCD4007AD8E6 /* RecentFuzziesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecentFuzziesController.h; path = Classes/Controllers/RecentFuzziesController.h; sourceTree = SOURCE_ROOT; };
+		E4A5BB7E18B3DCD4007AD8E6 /* RecentFuzziesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecentFuzziesController.m; path = Classes/Controllers/RecentFuzziesController.m; sourceTree = SOURCE_ROOT; };
+		E4A5BB7F18B3DCD4007AD8E6 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = Classes/Controllers/SettingsViewController.h; sourceTree = SOURCE_ROOT; };
+		E4A5BB8018B3DCD4007AD8E6 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = Classes/Controllers/SettingsViewController.m; sourceTree = SOURCE_ROOT; };
+		E4A5BB8118B3DCD4007AD8E6 /* SplashScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplashScreenController.h; path = Classes/Controllers/SplashScreenController.h; sourceTree = SOURCE_ROOT; };
+		E4A5BB8218B3DCD4007AD8E6 /* SplashScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SplashScreenController.m; path = Classes/Controllers/SplashScreenController.m; sourceTree = SOURCE_ROOT; };
+		E4B4514C1922791D0058E250 /* thumb-placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "thumb-placeholder@2x.png"; path = "Resources/Images/thumb-placeholder@2x.png"; sourceTree = "<group>"; };
+		E4BE4CAD1DB73109007C4F51 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		E4D659471912E8C100A4B4C9 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		E4F0FEA71745859100CD3650 /* DailyFuzzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyFuzzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4F0FEAA1745859100CD3650 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E4F0FEAE1745859100CD3650 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4F0FEA41745859100CD3650 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E49DAFF41DB59B2600355A02 /* CoreMedia.framework in Frameworks */,
+				E49DAFF11DB49A8300355A02 /* AVKit.framework in Frameworks */,
+				E49DAFEF1DB49A3200355A02 /* AVFoundation.framework in Frameworks */,
+				E4D659481912E8C100A4B4C9 /* ImageIO.framework in Frameworks */,
+				E49D33A118CF975A005A7883 /* SystemConfiguration.framework in Frameworks */,
+				E470C44618BD34740064508E /* UIKit.framework in Frameworks */,
+				E470C44718BD348C0064508E /* CoreGraphics.framework in Frameworks */,
+				9A92E14CCA35637127174705 /* Pods_DailyFuzzy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9616FE2319B696119DB3CD41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				154964F946A4956A32B413A6 /* Pods-DailyFuzzy.debug.xcconfig */,
+				DDD3780B23CB7B5D6D439EF0 /* Pods-DailyFuzzy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E4D1D01717597BE2007D9F93 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				E491A6B218CD1FDB00FC8D90 /* AppiraterLocalizable.strings */,
+				E4A5BB2418B3DC9E007AD8E6 /* DailyFuzzy-Info.plist */,
+				E4A5BB2618B3DC9E007AD8E6 /* InfoPlist.strings */,
+				E4A5BB2818B3DC9E007AD8E6 /* MainStoryboard_iPad.storyboard */,
+				E4A5BB2A18B3DC9E007AD8E6 /* MainStoryboard_iPhone.storyboard */,
+			);
+			name = en.lproj;
+			path = Resources/en.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4EACF4818A07A8100AAE876 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E470C44418BCF9A60064508E /* Images.xcassets */,
+				E4D1D01717597BE2007D9F93 /* en.lproj */,
+				E4EACF4918A07A8B00AAE876 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E4EACF4918A07A8B00AAE876 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E491A69A18C9426900FC8D90 /* background-light-small@2x.png */,
+				E4A5BB3F18B3DCB0007AD8E6 /* leftArrow@2x.png */,
+				E491A69C18C94E1600FC8D90 /* missing-image@2x.png */,
+				E4A5BB4118B3DCB0007AD8E6 /* rightArrow@2x.png */,
+				E418F7AF1DB6C7E400690612 /* splash-header@2x.png */,
+				E418F7B01DB6C7E400690612 /* splash-footer@2x.png */,
+				E418F7AD1DB6C67200690612 /* splash-center@2x.png */,
+				E418F7B11DB6C7E400690612 /* splash-title@2x.png */,
+				E4A5BB4518B3DCB0007AD8E6 /* tab-item@2x.png */,
+				E4B4514C1922791D0058E250 /* thumb-placeholder@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		E4EACF4E18A07AED00AAE876 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				E491A69618C8FEC700FC8D90 /* PSTCenteredScrollView.h */,
+				E491A69518C8FEC700FC8D90 /* PSTCenteredScrollView.m */,
+				E4A5BB6518B3DCC9007AD8E6 /* DailyFuzzy-Prefix.pch */,
+				E4A5BB6618B3DCC9007AD8E6 /* FuzzyAppDelegate.h */,
+				E4A5BB6718B3DCC9007AD8E6 /* FuzzyAppDelegate.m */,
+				E4A5BB6918B3DCC9007AD8E6 /* main.m */,
+				E4A5BB6C18B3DCC9007AD8E6 /* MKNumberBadgeView.h */,
+				E4A5BB6D18B3DCC9007AD8E6 /* MKNumberBadgeView.m */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		E4EACF4F18A07B2C00AAE876 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E471DB531E8EF880001B0FA7 /* AlertManager.h */,
+				E471DB541E8EF880001B0FA7 /* AlertManager.m */,
+				E4A5BB5C18B3DCBE007AD8E6 /* PictureManager.h */,
+				E4A5BB5D18B3DCBE007AD8E6 /* PictureManager.m */,
+				E4A5BB6018B3DCBE007AD8E6 /* RedditFetcher.h */,
+				E4A5BB6118B3DCBE007AD8E6 /* RedditFetcher.m */,
+				E471DB501E8EF4F5001B0FA7 /* Utils.h */,
+				E471DB511E8EF4F5001B0FA7 /* Utils.m */,
+				E4A5BB5E18B3DCBE007AD8E6 /* ViewUtils.h */,
+				E4A5BB5F18B3DCBE007AD8E6 /* ViewUtils.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E4EACF5018A07B4700AAE876 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E4A5BB7918B3DCD4007AD8E6 /* FavoritesViewController.h */,
+				E4A5BB7A18B3DCD4007AD8E6 /* FavoritesViewController.m */,
+				E4A5BB7B18B3DCD4007AD8E6 /* PictureViewController.h */,
+				E4A5BB7C18B3DCD4007AD8E6 /* PictureViewController.m */,
+				E4A5BB7D18B3DCD4007AD8E6 /* RecentFuzziesController.h */,
+				E4A5BB7E18B3DCD4007AD8E6 /* RecentFuzziesController.m */,
+				E4A5BB7F18B3DCD4007AD8E6 /* SettingsViewController.h */,
+				E4A5BB8018B3DCD4007AD8E6 /* SettingsViewController.m */,
+				E4A5BB8118B3DCD4007AD8E6 /* SplashScreenController.h */,
+				E4A5BB8218B3DCD4007AD8E6 /* SplashScreenController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E4F0FE9E1745859100CD3650 = {
+			isa = PBXGroup;
+			children = (
+				E44ACF2418A15CB600408320 /* DailyFuzzy.entitlements */,
+				E4EACF4818A07A8100AAE876 /* Resources */,
+				E4F0FEB01745859100CD3650 /* Classes */,
+				E4F0FEA91745859100CD3650 /* Frameworks */,
+				E4F0FEA81745859100CD3650 /* Products */,
+				9616FE2319B696119DB3CD41 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		E4F0FEA81745859100CD3650 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4F0FEA71745859100CD3650 /* DailyFuzzy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4F0FEA91745859100CD3650 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4BE4CAD1DB73109007C4F51 /* Photos.framework */,
+				E49DAFF31DB59B2600355A02 /* CoreMedia.framework */,
+				E49DAFF01DB49A8300355A02 /* AVKit.framework */,
+				E49DAFEE1DB49A3200355A02 /* AVFoundation.framework */,
+				E4D659471912E8C100A4B4C9 /* ImageIO.framework */,
+				E491A6B518CD200600FC8D90 /* SystemConfiguration.framework */,
+				E491A6A118CB8FE600FC8D90 /* QuartzCore.framework */,
+				E4F0FEAA1745859100CD3650 /* UIKit.framework */,
+				E4F0FEAE1745859100CD3650 /* CoreGraphics.framework */,
+				DE33A48C4441C41C0B7A3ECD /* Pods_DailyFuzzy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4F0FEB01745859100CD3650 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E4EACF4F18A07B2C00AAE876 /* Models */,
+				E4EACF4E18A07AED00AAE876 /* Delegates */,
+				E4EACF5018A07B4700AAE876 /* Controllers */,
+			);
+			name = Classes;
+			path = FlickrFetcher;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4F0FEA61745859100CD3650 /* DailyFuzzy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4F0FED81745859100CD3650 /* Build configuration list for PBXNativeTarget "DailyFuzzy" */;
+			buildPhases = (
+				7A4F6480B447C751C89E6DCC /* [CP] Check Pods Manifest.lock */,
+				E4F0FEA31745859100CD3650 /* Sources */,
+				E4F0FEA41745859100CD3650 /* Frameworks */,
+				E4F0FEA51745859100CD3650 /* Resources */,
+				8B79A0AF3760C8C6B26CA405 /* [CP] Embed Pods Frameworks */,
+				881CB648BBECB8EB3B7D3566 /* [CP] Copy Pods Resources */,
+				E471DB4C1E8EBB7B001B0FA7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DailyFuzzy;
+			productName = FlickrFetcher;
+			productReference = E4F0FEA71745859100CD3650 /* DailyFuzzy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4F0FE9F1745859100CD3650 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FlickrFetcher;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Regaip Sen";
+				TargetAttributes = {
+					E4F0FEA61745859100CD3650 = {
+						DevelopmentTeam = E3V3UGV4S4;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = E4F0FEA21745859100CD3650 /* Build configuration list for PBXProject "DailyFuzzy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E4F0FE9E1745859100CD3650;
+			productRefGroup = E4F0FEA81745859100CD3650 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4F0FEA61745859100CD3650 /* DailyFuzzy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4F0FEA51745859100CD3650 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4A5BB2D18B3DC9E007AD8E6 /* InfoPlist.strings in Resources */,
+				E491A69B18C9426900FC8D90 /* background-light-small@2x.png in Resources */,
+				E4A5BB2E18B3DC9E007AD8E6 /* MainStoryboard_iPad.storyboard in Resources */,
+				E418F7B21DB6C7E400690612 /* splash-header@2x.png in Resources */,
+				E470C44518BCF9A60064508E /* Images.xcassets in Resources */,
+				E4A5BB2F18B3DC9E007AD8E6 /* MainStoryboard_iPhone.storyboard in Resources */,
+				E418F7B41DB6C7E400690612 /* splash-title@2x.png in Resources */,
+				E4A5BB5718B3DCB0007AD8E6 /* rightArrow@2x.png in Resources */,
+				E418F7B31DB6C7E400690612 /* splash-footer@2x.png in Resources */,
+				E491A6B418CD1FDB00FC8D90 /* AppiraterLocalizable.strings in Resources */,
+				E4A5BB5518B3DCB0007AD8E6 /* leftArrow@2x.png in Resources */,
+				E491A69D18C94E1600FC8D90 /* missing-image@2x.png in Resources */,
+				E4A5BB5B18B3DCB0007AD8E6 /* tab-item@2x.png in Resources */,
+				E418F7AE1DB6C67200690612 /* splash-center@2x.png in Resources */,
+				E4B4514D1922791D0058E250 /* thumb-placeholder@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7A4F6480B447C751C89E6DCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		881CB648BBECB8EB3B7D3566 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DailyFuzzy/Pods-DailyFuzzy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B79A0AF3760C8C6B26CA405 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DailyFuzzy/Pods-DailyFuzzy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E471DB4C1E8EBB7B001B0FA7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" d7107b75f7df4f08b0d47b741ee07f1e58923526 826dc82e9765d7e2be7ba838c5dd57826e45bd555b60bc2aec8c1cb8f03f319b";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4F0FEA31745859100CD3650 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4A5BB7518B3DCC9007AD8E6 /* main.m in Sources */,
+				E4A5BB8418B3DCD4007AD8E6 /* PictureViewController.m in Sources */,
+				E4A5BB7318B3DCC9007AD8E6 /* FuzzyAppDelegate.m in Sources */,
+				E4A5BB8718B3DCD4007AD8E6 /* SplashScreenController.m in Sources */,
+				E471DB521E8EF4F5001B0FA7 /* Utils.m in Sources */,
+				E4A5BB8618B3DCD4007AD8E6 /* SettingsViewController.m in Sources */,
+				E4A5BB6418B3DCBE007AD8E6 /* RedditFetcher.m in Sources */,
+				E4A5BB8318B3DCD4007AD8E6 /* FavoritesViewController.m in Sources */,
+				E471DB551E8EF880001B0FA7 /* AlertManager.m in Sources */,
+				E4A5BB7718B3DCC9007AD8E6 /* MKNumberBadgeView.m in Sources */,
+				E4A5BB8518B3DCD4007AD8E6 /* RecentFuzziesController.m in Sources */,
+				E491A69718C8FEC700FC8D90 /* PSTCenteredScrollView.m in Sources */,
+				E4A5BB6218B3DCBE007AD8E6 /* PictureManager.m in Sources */,
+				E4A5BB6318B3DCBE007AD8E6 /* ViewUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E491A6B218CD1FDB00FC8D90 /* AppiraterLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E491A6B318CD1FDB00FC8D90 /* en */,
+			);
+			name = AppiraterLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		E4A5BB2418B3DC9E007AD8E6 /* DailyFuzzy-Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4A5BB2518B3DC9E007AD8E6 /* en */,
+			);
+			name = "DailyFuzzy-Info.plist";
+			sourceTree = "<group>";
+		};
+		E4A5BB2618B3DC9E007AD8E6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4A5BB2718B3DC9E007AD8E6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E4A5BB2818B3DC9E007AD8E6 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4A5BB2918B3DC9E007AD8E6 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		E4A5BB2A18B3DC9E007AD8E6 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4A5BB2B18B3DC9E007AD8E6 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E4F0FED61745859100CD3650 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Regaip Sen (GSPA67DXX4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Regaip Sen (GSPA67DXX4)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "2798a03b-96e6-4971-9eff-bbbbb3c3c477";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4F0FED71745859100CD3650 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Regaip Sen (E3V3UGV4S4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Regaip Sen (E3V3UGV4S4)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "e90392be-e056-4c1f-89dd-0456ce627ccf";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4F0FED91745859100CD3650 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 154964F946A4956A32B413A6 /* Pods-DailyFuzzy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = DailyFuzzy.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = E3V3UGV4S4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Classes/Delegates/DailyFuzzy-Prefix.pch";
+				INFOPLIST_FILE = "Resources/en.lproj/DailyFuzzy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/regosen/Projects/iOS/Daily\\ Fuzzy/Classes/Delegates",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.regosen.dailyfuzzy;
+				PRODUCT_NAME = DailyFuzzy;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E4F0FEDA1745859100CD3650 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDD3780B23CB7B5D6D439EF0 /* Pods-DailyFuzzy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = DailyFuzzy.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = E3V3UGV4S4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Classes/Delegates/DailyFuzzy-Prefix.pch";
+				INFOPLIST_FILE = "Resources/en.lproj/DailyFuzzy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/regosen/Projects/iOS/Daily\\ Fuzzy/Classes/Delegates",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.regosen.dailyfuzzy;
+				PRODUCT_NAME = DailyFuzzy;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4F0FEA21745859100CD3650 /* Build configuration list for PBXProject "DailyFuzzy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F0FED61745859100CD3650 /* Debug */,
+				E4F0FED71745859100CD3650 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4F0FED81745859100CD3650 /* Build configuration list for PBXNativeTarget "DailyFuzzy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F0FED91745859100CD3650 /* Debug */,
+				E4F0FEDA1745859100CD3650 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4F0FE9F1745859100CD3650 /* Project object */;
+}

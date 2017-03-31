@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="4">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Daily Fuzzy Nav-->
+        <scene sceneID="56t-PM-0FM">
+            <objects>
+                <navigationController title="Daily Fuzzy Nav" definesPresentationContext="YES" id="W8h-5h-PFm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Today's Fuzzy" image="tab-item.png" id="i4L-bW-dgA"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aGX-k0-TZU">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.069879374399999999" green="0.62990274229999998" blue="0.14036134550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.069879374397261246" green="0.62990274234693877" blue="0.14036134545088741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8qB-Yb-MeO" kind="relationship" relationship="rootViewController" id="3op-Aq-VLb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cKc-yZ-vMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1290" y="-265"/>
+        </scene>
+        <!--Recents Nav-->
+        <scene sceneID="LS5-j7-I18">
+            <objects>
+                <navigationController title="Recents Nav" definesPresentationContext="YES" id="zZJ-Us-ypU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Past Fuzzies" image="tab-item.png" id="Uav-Kx-NW0"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FBR-qB-9Tp">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.069879374399999999" green="0.62990274229999998" blue="0.14036134550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.069879374399999999" green="0.62990274229999998" blue="0.14036134550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1Tn-6U-DnQ" kind="relationship" relationship="rootViewController" id="WIh-87-FLq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ekP-Cm-cea" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1066" y="492"/>
+        </scene>
+        <!--Past Fuzzies-->
+        <scene sceneID="1cC-Rp-OPr">
+            <objects>
+                <tableViewController id="1Tn-6U-DnQ" customClass="RecentFuzziesController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="aCF-fT-pPp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Picture" textLabel="88N-Qj-Hf1" style="IBUITableViewCellStyleDefault" id="4xs-gV-WpJ">
+                                <rect key="frame" x="0.0" y="86" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4xs-gV-WpJ" id="OL8-qn-jU4">
+                                    <frame key="frameInset" width="341" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="88N-Qj-Hf1">
+                                            <frame key="frameInset" minX="16" minY="0.0%" width="324" height="43.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="8qB-Yb-MeO" kind="push" identifier="Picture View" id="Yje-Oi-VhU"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1Tn-6U-DnQ" id="VKG-b9-r0c"/>
+                            <outlet property="delegate" destination="1Tn-6U-DnQ" id="lDl-7v-Vpu"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="History" image="tab-item.png" id="Dt4-ko-s5i"/>
+                    <navigationItem key="navigationItem" title="Past Fuzzies" id="Ws1-y0-Hjs"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3cr-sx-Pm3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1509" y="492"/>
+        </scene>
+        <!--Favorites Nav-->
+        <scene sceneID="wgT-d7-Gq1">
+            <objects>
+                <navigationController title="Favorites Nav" definesPresentationContext="YES" id="wqw-Sm-8Jr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorites" image="tab-item.png" id="0iR-8P-WQR"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QKC-0O-Pah">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.069879374399999999" green="0.62990274229999998" blue="0.14036134550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.069879374399999999" green="0.62990274229999998" blue="0.14036134550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="UOi-cv-kuu" kind="relationship" relationship="rootViewController" id="yn9-Rg-h5S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tEL-sU-Ew8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1074" y="1198"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="15">
+            <objects>
+                <tabBarController id="4" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.069879374399999999" green="0.62990274229999998" blue="0.14036134550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.069879374399999999" green="0.62990274229999998" blue="0.14036134550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.069879374399999999" green="0.62990274229999998" blue="0.14036134550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.069879374399999999" green="0.62990274229999998" blue="0.14036134550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="W8h-5h-PFm" kind="relationship" relationship="viewControllers" id="fxR-ZN-J5g"/>
+                        <segue destination="zZJ-Us-ypU" kind="relationship" relationship="viewControllers" id="Aq2-eI-ayx"/>
+                        <segue destination="wqw-Sm-8Jr" kind="relationship" relationship="viewControllers" id="XfT-BE-NXz"/>
+                        <segue destination="vwI-w2-3Uk" kind="relationship" relationship="viewControllers" id="MVh-SQ-fhz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="492"/>
+        </scene>
+        <!--Daily Fuzzy-->
+        <scene sceneID="kj1-0j-ABM">
+            <objects>
+                <viewController storyboardIdentifier="PictureVC" id="8qB-Yb-MeO" customClass="PictureViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T1u-xU-fqb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Daily Fuzzy" id="hLL-11-VOf"/>
+                    <connections>
+                        <segue destination="8BB-Z0-IcZ" kind="modal" identifier="Splash" modalTransitionStyle="flipHorizontal" id="bLr-B7-Tce"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zbo-vY-4zZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2321" y="472"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="YPt-bU-5Zw">
+            <objects>
+                <tableViewController title="Favorites" id="UOi-cv-kuu" customClass="FavoritesViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Tn7-pr-v9r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <label key="tableFooterView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can add to favorites by tapping a picture." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aTM-Np-tLY">
+                            <rect key="frame" x="0.0" y="130" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Picture" textLabel="Fcu-CG-5wb" style="IBUITableViewCellStyleDefault" id="sSV-qG-ZsA">
+                                <rect key="frame" x="0.0" y="86" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sSV-qG-ZsA" id="Wlh-dY-sSq">
+                                    <frame key="frameInset" width="341" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fcu-CG-5wb">
+                                            <frame key="frameInset" minX="16" minY="0.0%" width="324" height="43.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="8qB-Yb-MeO" kind="push" identifier="Picture View" id="3sf-MH-gft"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="UOi-cv-kuu" id="yPb-9v-IWv"/>
+                            <outlet property="delegate" destination="UOi-cv-kuu" id="8Sf-69-2mt"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="tab-item.png" id="Q5N-gt-EhJ"/>
+                    <navigationItem key="navigationItem" title="Favorites" id="EhE-SN-TKA"/>
+                    <connections>
+                        <outlet property="labelOnEmpty" destination="aTM-Np-tLY" id="DYW-0g-jNp"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qaF-r6-nhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1519.5" y="1198"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="cAh-dp-Eqm">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="vwI-w2-3Uk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="tab-item.png" id="TwE-IE-dwb"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qtS-cM-r2i">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.069879374399999999" green="0.62990274229999998" blue="0.14036134550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.069879374399999999" green="0.62990274229999998" blue="0.14036134550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BLE-h9-scn" kind="relationship" relationship="rootViewController" id="JMu-3o-gYm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FJy-H5-QTj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1083" y="1978"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="YY5-90-YyN">
+            <objects>
+                <tableViewController id="BLE-h9-scn" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="EAs-Zd-ium">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="Daily Notifications" footerTitle="You'll be notified of a new fuzzy at the time below each day:" id="3GG-Gv-JT2">
+                                <cells/>
+                            </tableViewSection>
+                            <tableViewSection id="CPw-au-yWF">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Notification Time" textLabel="WVV-V0-RcT" style="IBUITableViewCellStyleDefault" id="XVq-lv-sma">
+                                        <rect key="frame" x="0.0" y="175.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XVq-lv-sma" id="WMt-Mf-P5j">
+                                            <frame key="frameInset" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="12:00 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WVV-V0-RcT">
+                                                    <frame key="frameInset" minX="16" width="344" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Time Picker" rowHeight="210" id="zW0-3A-boq">
+                                        <rect key="frame" x="0.0" y="219.5" width="375" height="210"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zW0-3A-boq" id="7Ft-rR-6Pp">
+                                            <frame key="frameInset" width="375" height="209.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="BLE-h9-scn" id="yI4-xb-rQL"/>
+                            <outlet property="delegate" destination="BLE-h9-scn" id="RrW-xU-XMK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Settings" id="wZP-aj-o9D"/>
+                    <connections>
+                        <segue destination="8BB-Z0-IcZ" kind="modal" identifier="Splash" modalTransitionStyle="flipHorizontal" id="Xyk-3b-l7B"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cjt-Nk-aUz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1519.5" y="1958"/>
+        </scene>
+        <!--Splash Screen Controller-->
+        <scene sceneID="HNz-O3-AQm">
+            <objects>
+                <viewController id="8BB-Z0-IcZ" customClass="SplashScreenController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dYL-3Z-YQ1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.069879374399999999" green="0.62990274229999998" blue="0.14036134550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDm-Wr-frR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2855" y="472"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab-item.png" width="33" height="32"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="3sf-MH-gft"/>
+        <segue reference="Xyk-3b-l7B"/>
+    </inferredMetricsTieBreakers>
+</document>

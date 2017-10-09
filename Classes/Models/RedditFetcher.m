@@ -17,7 +17,6 @@ static NSArray* sToxicSubstrings = nil; // swear words that children should not 
 static NSArray* sWhitelistRegexes = nil; // word prefixes that indicate this is a picture of animals
 static NSArray* sOverridableBlacklistRegexes = nil; // substrings that indicate this is a picture of non-animals
 static NSArray* sNonOverridableBlacklistRegexes = nil; // substrings to avoid, even if it's a picture of animals
-
     
 + (NSArray*)regexArrayFromPrefixes:(NSArray*)prefixes
 {
@@ -97,20 +96,17 @@ static NSArray* sNonOverridableBlacklistRegexes = nil; // substrings to avoid, e
     {
         NSString* urlString = [data objectForKey:REDDIT_URL];
         NSString* thumbString = [data objectForKey:REDDIT_THUMB];
-        if ([thumbString rangeOfString:@"redditmedia.com"].location != NSNotFound)
+        NSURL *url = [NSURL URLWithString:urlString];
+        NSURL *thumbUrl = [NSURL URLWithString:thumbString];
+        if (![thumbUrl.host containsString:@"redditmedia.com"])
         {
-            if ([urlString hasPrefix:@"http://imgur.com/"]   ||
-                [urlString hasPrefix:@"http://i.imgur.com/"] ||
-                [urlString hasPrefix:@"http://www.imgur.com"])
+            if ([url.host containsString:@"imgur.com"])
             {
-                if ([[[urlString lastPathComponent] stringByDeletingPathExtension] length] == 5 ||
-                    [[[urlString lastPathComponent] stringByDeletingPathExtension] length] == 7) {
-                    
-                    
-                    NSString* imagePath = [NSString stringWithFormat:@"http://i.imgur.com/%@l.jpg",
-                                            [[urlString lastPathComponent] stringByDeletingPathExtension]];
-                    NSString* thumbPath = [NSString stringWithFormat:@"http://i.imgur.com/%@s.jpg",
-                                            [[urlString lastPathComponent] stringByDeletingPathExtension]];
+                NSString* filebase = [[urlString lastPathComponent] stringByDeletingPathExtension];
+                if ([filebase length] == 5 || [filebase length] == 7)
+                {
+                    NSString* imagePath = [NSString stringWithFormat:@"https://i.imgur.com/%@l.jpg", filebase];
+                    NSString* thumbPath = [NSString stringWithFormat:@"https://i.imgur.com/%@s.jpg", filebase];
                     
                     NSMutableDictionary* newData = [data mutableCopy];
                     if (![urlString hasSuffix:@".gif"] && ![urlString hasSuffix:@".gifv"])
@@ -210,17 +206,14 @@ static NSArray* sNonOverridableBlacklistRegexes = nil; // substrings to avoid, e
             continue;
         }
         
-        if ([urlString hasPrefix:@"http://imgur.com/"]   ||
-            [urlString hasPrefix:@"http://i.imgur.com/"] ||
-            [urlString hasPrefix:@"http://www.imgur.com"]) {
-            if ([[[urlString lastPathComponent] stringByDeletingPathExtension] length] == 5 ||
-                [[[urlString lastPathComponent] stringByDeletingPathExtension] length] == 7) {
-                
-                
-                NSString* imagePath = [NSString stringWithFormat:@"http://i.imgur.com/%@l.jpg",
-                                       [[urlString lastPathComponent] stringByDeletingPathExtension]];
-                NSString* thumbPath = [NSString stringWithFormat:@"http://i.imgur.com/%@s.jpg",
-                                       [[urlString lastPathComponent] stringByDeletingPathExtension]];
+        NSURL *url = [NSURL URLWithString:urlString];
+        if ([url.host containsString:@"imgur.com"])
+        {
+            NSString* filebase = [[urlString lastPathComponent] stringByDeletingPathExtension];
+            if ([filebase length] == 5 || [filebase length] == 7)
+            {
+                NSString* imagePath = [NSString stringWithFormat:@"https://i.imgur.com/%@l.jpg", filebase];
+                NSString* thumbPath = [NSString stringWithFormat:@"https://i.imgur.com/%@s.jpg", filebase];
                 
                 if (![urlString hasSuffix:@".gif"] && ![urlString hasSuffix:@".gifv"])
                 {

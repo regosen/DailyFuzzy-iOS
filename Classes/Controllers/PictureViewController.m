@@ -15,8 +15,11 @@
 #import "MKNumberBadgeView.h"
 #import "PSTCenteredScrollView.h"
 
+//#define USING_FACEBOOK
+#ifdef USING_FACEBOOK
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKShareKit/FBSDKShareKit.h>
+#endif
 
 @interface PictureViewController() <UIActionSheetDelegate, UIGestureRecognizerDelegate>
 
@@ -41,7 +44,9 @@
 
 @implementation PictureViewController
 
+#ifdef USING_FACEBOOK
 #define SHARE_FACEBOOK @"Share on Facebook"
+#endif
 #define SHARE_SAVE @"Save to Photo Album"
 
 #pragma mark - helper methods
@@ -317,7 +322,11 @@
         NSString* photoId = (NSString*)[self.photoInfo objectForKey:REDDIT_UNIQUE];
         NSString* favButton = [PictureManager isFavorite:photoId] ? FAVORITES_DEL : FAVORITES_ADD;
         
-        self.actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:SHARE_FACEBOOK, favButton, SHARE_SAVE ,nil];
+        self.actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:
+#ifdef USING_FACEBOOK
+                            SHARE_FACEBOOK,
+#endif
+                            favButton, SHARE_SAVE ,nil];
         [self.actionSheet showInView:self.scrollView];
     }
     else
@@ -610,6 +619,7 @@
             [self viewWillDisappear:NO];
         }
     }
+#ifdef USING_FACEBOOK
     else if ([choice isEqualToString:SHARE_FACEBOOK])
     {
         FBSDKShareLinkContent *content = [[FBSDKShareLinkContent alloc] init];
@@ -633,6 +643,7 @@
         
         [dialog show];
     }
+#endif // USING_FACEBOOK
     else if ([choice isEqualToString:SHARE_SAVE])
     {
         UIImageWriteToSavedPhotosAlbum(self.scrollView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);

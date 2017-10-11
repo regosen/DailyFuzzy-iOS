@@ -14,7 +14,6 @@ This started out as my first iOS project, and it contains starter code from Stan
 
 - save images to your device
 - track favorites and past images
-- share on Facebook
 - daily notifications
 
 ## Screenshots
